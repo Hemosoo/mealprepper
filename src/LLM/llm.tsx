@@ -107,7 +107,7 @@ export const LLM: React.FC<LLMProps> = ( { selectedIngredients } ) => {
   const handleSubmit = async () => {
     setIsLoading(true);
     const configValue: string = (process.env.REACT_APP_OPENAI_API_KEY as string);
-    console.log(configValue);
+    //console.log(configValue);
     try {
       const result = await axios.post(
         'https://api.openai.com/v1/chat/completions',
